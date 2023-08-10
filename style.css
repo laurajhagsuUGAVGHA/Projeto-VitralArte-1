@@ -1,476 +1,350 @@
 /* RESET CSS */
 * {
-    border: 0;
     margin: 0;
+    border: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    
-    a { 
-        text-decoration: none;
-    }
-    
-    img {
-        width: 100%;
-        height: auto;
-    }
-    /*FIM RESET CSS */
+}
 
-     /* CABEÇALHO */
-    .email_telefone {
-        background-color: #106EEA;
-        display: flex;
-        height: 20px;
-        padding: 20px;
-    }
-    
-    .email {
-        margin-left: 213px;
-        color: white;
-        font: 400 15px 'Open Sans', sans-serif;
-    }
-    
-    .numero {
-        margin-left: 220px;
-        color: white;
-        font: 400 15px 'Open Sans', sans-serif;
-    }
-    
-    .logo {
-        display: flex;
-        margin-left: 230px;
-    }
-    
-    .logo .nome {
-        font: 600 30px 'Poppins' , sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 100px;
-    letter-spacing: 0em;
-    text-align: center;
-    
-    }
-    
-    .menu1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 200px;
-    }
-    
-    .item {
-        padding: 30px;
-        padding-top: 50px;
-        font: 400 20px 'Open Sans', sans-serif;
-        color: black;
-    }
+a {
+    text-decoration: none;
+}
 
-    .container, .infos{
-        display: flex;
-    }
-    #header .container{
-        background-color: #106EEA;
-    }
-    .infos{
-        margin-left: 182px;
-        gap: 121px;
-        padding: 11px 0;
-    }
-    #header .titulo{
-        font-family: Open Sans;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 27px;
+img {
+    width: 100%;
+}
+/* FIM RESET CSS */
+/* IMPORTAR FONTES */
+@font-face {
+    font-family: 'Open-Sans Regular';
+    src: url(Font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open-Sans Bold';
+    src: url(Font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url(Font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(Font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(Font/Roboto-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(Font/Roboto-Bold.ttf);
+}
+
+/* ********** */
+
+.container {
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ********* */
+
+.barra {
+    background-color: #106EEA;
+}
+
+.barra .container {
+    height: 35px;
+}
+
+.contato {
     color: white;
-    }
-    .logo .titulo{
-        font-family: Poppins-b;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 68px;
-    }
-    #nav .item{
-        font-family: Open Sans;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 30px;
-    }
-    #nav{
-        display: flex;
-        gap: 47px;
-    }
-    #logo-nav{
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    /* FIM CABEÇALHO */
+    font: 500 20px 'Open-Sans Regular', sans-serif;
+    padding-right: 30px;
+}
 
-    /*VIDRO*/
 
-    .conteudo{
-      text-align: right;
-      right: 100px;
+/* HEADER */
+.logo h1 {
+    font: 700 45px 'Poppins Bold', sans-serif;
+}
 
-    }
-    .titulo{
-        font-family: Roboto-b;
-font-size: 35px;
-font-weight: 700;
-line-height: 41px;
-        
-    }
- .subtitulo{
-    font-family: Poppins;
-font-size: 25px;
-font-weight: 400;
-line-height: 60px;
- }
-    .vidros {
-        background-image: url(Img/Vitral.png);
-        height: 430px;
+.menu .item, 
+.texto {
+    font: 500 22px 'Open-Sans Regular', sans-serif;
+    color: black;
+    margin-left: 50px;
+}
+
+
+/* MAIN */
+span {
+    color: #106EEA;
+}
+
+
+.inicio {
+    background-image: url(Img/Vitral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inicio .container {
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    align-items: flex-end;
+}
+
+.titulo {
+    font: 700 60px 'Poppins Bold', sans-serif;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font: 500 31px 'Poppins Regular', sans-serif;
+}
+
+#sobreNos {
+    margin: 100px 0;
+}
+
+.sobreNos .imagem img {
+    width: 450px;
+}
+
+.titulo-site {
+    font: 700 35px 'Roboto Bold', sans-serif;
+    margin-bottom: 15px;
+}
+
+.sobreNos .conteudo .texto {
+    text-align: justify;
+}
+
+.conteudo {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.caixa {
+    background-color: #F1F6FE;
+    border: 1px solid #8CA9CE;
+    text-align: center;
+    height: 245px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 30px 20px;
+}
+
+.caixa .imagem img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.numero {
+    font: 700 30px 'Open-Sans Bold', sans-serif;
+}
+
+.dados {
+    font: 500 20px 'Roboto Regular', sans-serif;
+}
+
+.servicos .container {
+    flex-direction: column;
+}
+
+.caixas-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixas-servicos .caixa {
+    width: 275px;
+    height: 190px;
+    margin: 0 50px;
     display: flex;
     align-items: center;
-    justify-content: end;
-    padding: 200px;
-    }
+    justify-self: center;
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 50px;
+}
 
+.caixa-texto {
+    font: 600 24px 'Roboto Bold', sans-serif;
+    width: 100%;
 
-    /* FIM VIDRO*/
-    /*SOBRE*/
-    #sobre .titulo{
-        font-family: Roboto-b;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 41px;
-    
-    }
-    #nos{
-        text-align: center;
-        margin-bottom: 7px;
-    }
-    b{
-        color: #106EEA;
-    }
-    #sobre .texto1{
-        font-family: Open Sans;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 33px;
-    text-align: justified;
-    width: 587px;
-    }
-    #sobre{
-        margin-top: 137px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    /*FIM SOBRE*/
+}
+.servicos, .contato {
+    margin: 150px 0;
+}
 
-    /*IMAGENS*/
-    .caixas{
-        display: flex;
-    }
-    .icon{
-        width: 100px;
-    }
-    #caixa-c .numero{
-        font-family: Open Sans-b;
-        font-size: 33px;
-        font-weight: 700;
-        line-height: 45px;
-    }
-    #caixa-c .subtex{
-        font-family: Roboto;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28px;
-    }
-    #caixa-c.caixa{
-        background-color: #F1F6FE;
-        border: 1px solid #8CA9CE;
-        border-radius: 10px;
-        width: 254px;
-        height: 244px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
-    }
-    #caixa-c{
-        width: 100%;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 135px;
-    }
-    
+.equipe .container {
+    flex-direction: column;
+}
 
-    .caixas{
-        display: flex;
-    }
-    .icon{
-        width: 100px;
-    }
-    #caixa-cima .numero{
-        font-family: Open Sans-b;
-        font-size: 33px;
-        font-weight: 700;
-        line-height: 45px;
-    }
-    #caixa-cima .sub{
-        font-family: Roboto;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28px;
-    }
-    #caixa-cima .caixa{
-        background-color: #F1F6FE;
-        border: 1px solid #8CA9CE;
-        border-radius: 10px;
-        width: 254px;
-        height: 244px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
-    }
-    #caixa-cima{
-        width: 100%;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 135px;
-    }
-    /*FIM IMAGENS*/ 
+.equipe .container .conteudo {
+    margin-top: 100px;
+}
 
-    #servicos .titulo, #equipe .titulo{
-        font-family: Roboto-b;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 41px;
-    }
-    #servicos .texto, #equipe .texto{
-        width: 856px;
-        font-family: Open Sans;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 33px;
-        text-align: center;
-    }
-    #servicos, #equipe{
-        margin-top: 170px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 13px;
-    }
-    #caixa-baixo .texto{
-        font-family: Roboto;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 28px;
-        width: 230px
-    }
-    #caixa-baixo .caixa{
-        height: 194px;
-        width: 274px;
-        border: 1px solid #8CA9CE;
-        border-radius: 7px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    #caixa-baixo{
-        margin: 0 85px;
-        flex-wrap: wrap;
-        gap: 87px;
-        justify-content: center;
-        margin-top: 71px;
-        padding-bottom: 101px;
-    }
-    .one{
-        border-bottom: solid 2px #1150A3;
-        ;
-    }
-    .pessoas{
-        margin-top: 84px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .pessoa .titulo{
-        font-family: Poppins-b;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
+.pessoas {
+    display: flex;
     text-align: center;
-    }
-    .pessoa .texto{
-        font-family: Roboto;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 22px;
+    margin: 50px 0;
+}
+
+.pessoa {
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 0 50px;
+}
+
+.texto-final {
+    text-align: justify;
+}
+
+.nome {
+    font: 700 24px 'Poppins Bold', sans-serif;
+}
+
+.cargo {
+    font: 500 20px 'Roboto Regular', sans-serif;
+}
+
+.descricao {
+    padding: 10px 15px;
+}
+
+.contato .container {
+    flex-direction: column;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.formulario {
+    margin-left: 50px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.endereco-nome, .endereco-local {
+    color: black;
+}
+
+.endereco-nome {
+    font: 700 30px 'Roboto Bold', sans-serif;
+    margin-bottom: 30px;
+}
+
+.endereco-local {
+    font:500 30px 'Roboto Regular', sans-serif;
     text-align: center;
-    }
-    .pessoa{
-        border: 1px solid #000000;
-        border-radius: 7px;
-    }
-    .pessoa .conteudo{
-        padding: 28px 0;
-    }
-    #baixo .texto{
-        font-family: Open Sans;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 33px;
-        text-align: justified;
-    }
-    #baixo .conteudo{
-        margin: 62px 182px;
-    }
-    .two{
-        border-bottom:  solid #1150A3;
-    }
-    #contato .titulo{
-        font-family: Roboto-b;
-        font-size: 35px;
-        font-weight: 700;
-        line-height: 41px;
-        text-align: center;
-    }
-    #contato .texto{
-        font-family: Open Sans;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 33px;
-        text-align: center;
-        margin: 5px 320px;
-    }
-    #contato{
-        margin-top: 182px;
-    }
-    .endereco .titulo{
-        font-family: Roboto-b;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 35px;
-        text-align: center;
-    }
-    .endereco .texto{
-        margin-top: 20px;
-        font-family: Roboto;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 35px;
-        text-align: center; 
-        width: 303px;   
-    }
-    .endereco{
-        border: 1.23px solid #8CA9CE;
-        padding: 130px 58px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #end-cont{
-        margin: 0 182px;
-    }
-    input{
-        background-color: #E5E5E5;
-    }
-    #nome, #email{
-        width: 274px;
-        height: 63px;
-        border-radius: 15px;
-    }
-    #nome, #email, #assunto, #msg{
-        font-family: Roboto-b;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 35px;
-        text-align: left;
-        color: #C1C1C1;
-        padding: 0 21px;
-    }
-    #assunto{
-        width: 587px;
-        height: 63px;
-        border-radius: 15px;
-    }
-    #msg{
-        width: 587px;
-        height: 159px;
-        border-radius: 15px;
-    }
-    form{
-        width: 587px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 39px;
-        justify-content: center;
-    }
-    #end-cont{
-        margin-top: 90px;
-        display: flex;
-        justify-content: space-around;
-    }
-    button{
-        font-family: Roboto-b;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 35px;
-        text-align: center;
-        color: white;
-        background-color: #106EEA;
-        border-radius: 15px;
-        padding: 15px 45px;
-        align-self: center;
-    }
-    footer .container{
-        background-color: #1150A3;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 55px;
-        margin-top: 135px;
-    }
-    footer .menu{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    footer .item{
-        font-family: Open Sans;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 34px;
-        text-align: center;
-        color: white;
-    }
-    .rede-logos{
-        margin-top: 15px;
-        display: flex;
-        gap: 10px;
-    }
-    .redes .titulo{
-        color: white;
-        font-family: Open Sans;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 41px;
-        text-align: center;
-    }
-    .logo{
-        width: 50px;
-    }
+}
+
+.endereco {
+    border: 1px solid #8CA9CE;
+    height: 430px;
+    width: 35%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+input, textarea {
+    background-color: #E5E5E5;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+input {
+    height: 60px;
+}
+
+textarea {
+    height: 160px;
+}
+
+.botao {
+    text-align: center;
+}
+
+button {
+    background-color: #106EEA;
+    color: white;
+    font: 600 30px 'Roboto Bold', sans-serif;
+    border-radius: 15px;
+    width: 70%;
+    height: 60px;
+}
 
 
+/* DIVISÃO */
+.divisao {
+    height: 2px;
+    background-color: #1150A3;
+    margin: 40px 0;
+}
+
+
+/* FOOTER */
+#footer {
+    background-color: #1150A3;
+}
+
+.footer .container {
+    justify-content: space-around;
+} 
+.footer .container .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.footer .container .menu a {
+    color: white;
+}
+
+.redes .logos img {
+    width: 50px;
+    height: auto;
+}
+
+.redes .titulo {
+    font: 500 30px 'Open-Sans Regular', sans-serif ;
+    color: white;
+}
